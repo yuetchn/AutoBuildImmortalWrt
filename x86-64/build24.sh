@@ -101,18 +101,6 @@ PACKAGES="$PACKAGES libimobiledevice"
 PACKAGES="$PACKAGES usbutils"
 
 # ======== 其他自定义软件 =========
-PACKAGES="$PACKAGES ca-bundle"
-PACKAGES="$PACKAGES attendedsysupgrade-common"
-PACKAGES="$PACKAGES base-files"
-PACKAGES="$PACKAGES block-mount"
-PACKAGES="$PACKAGES busybox"
-PACKAGES="$PACKAGES ca-certificates"
-PACKAGES="$PACKAGES dnsmasq-full"
-PACKAGES="$PACKAGES dropbear"
-PACKAGES="$PACKAGES firewall4"
-PACKAGES="$PACKAGES fstools"
-PACKAGES="$PACKAGES fwtool"
-PACKAGES="$PACKAGES getrandom"
 PACKAGES="$PACKAGES luci"
 PACKAGES="$PACKAGES luci-lib-docker"
 PACKAGES="$PACKAGES luci-light"
@@ -220,9 +208,6 @@ PACKAGES="$PACKAGES luci-i18n-v2raya-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-wifischedule-zh-cn"
 PACKAGES="$PACKAGES emailrelay"
 PACKAGES="$PACKAGES qbittorrent-enhanced-edition"
-PACKAGES="$PACKAGES "
-PACKAGES="$PACKAGES "
-PACKAGES="$PACKAGES "
 
 # ======== shell/custom-packages.sh =======
 # 合并imm仓库以外的第三方插件
