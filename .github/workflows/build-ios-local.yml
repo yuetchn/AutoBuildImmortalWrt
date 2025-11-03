@@ -16,7 +16,6 @@ on:
 jobs:
   build_installer_iso:
     runs-on: ubuntu-22.04
-    needs: build_immortalwrt
     env:
       GITHUB_ACTIONS_RUNNER_DISK: 30GB  # 请求大容量运行器
 
