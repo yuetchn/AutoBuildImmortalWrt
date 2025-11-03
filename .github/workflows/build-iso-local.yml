@@ -20,11 +20,6 @@ jobs:
       GITHUB_ACTIONS_RUNNER_DISK: 30GB  # 请求大容量运行器
 
     steps:
-      - name: Download firmware artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: firmware-img
-
       - name: ⏬ 同步 img-installer 项目 准备制作ISO
         run: |
           git clone https://github.com/wukongdaily/img-installer.git
