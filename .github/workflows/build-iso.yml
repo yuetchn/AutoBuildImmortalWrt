@@ -106,7 +106,11 @@ jobs:
               -e CLEAN_BUILD=true \
               immortalwrt/imagebuilder:x86-64-openwrt-${luci_version} /bin/bash /home/build/immortalwrt/build.sh
           done
-
+      - name: 🔧 修复文件权限 
+        run: |
+          sudo chown -R $USER:$USER ${{ github.workspace  }}/bin 
+          sudo chmod -R u+rw ${{ github.workspace  }}/bin 
+          
       - name: ✅ 复制固件到根目录
         run: |
           mv ${{ github.workspace }}/bin/targets/x86/64/*squashfs-combined-efi.img.gz ${{ github.workspace }}
@@ -122,6 +126,8 @@ jobs:
   build_installer_iso:
     runs-on: ubuntu-22.04
     needs: build_immortalwrt
+    env:
+      GITHUB_ACTIONS_RUNNER_DISK: 30GB  # 请求大容量运行器
 
     steps:
       - name: Download firmware artifact
