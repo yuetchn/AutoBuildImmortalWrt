@@ -35,7 +35,7 @@ jobs:
           wget "${{ github.event.inputs.imgFile }}"
           firmware_file=$(ls *squashfs-combined-efi.img.gz)
           cd img-installer
-          bash autobuild/autobuild.sh ".。/$firmware_file"
+          bash autobuild/autobuild.sh "../$firmware_file"
 
       - name: 🚀 上传 ISO 到 Release
         uses: softprops/action-gh-release@v2.2.1
