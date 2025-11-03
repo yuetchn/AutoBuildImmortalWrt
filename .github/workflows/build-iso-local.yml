@@ -33,8 +33,8 @@ jobs:
       - name: ✅ 制作 ISO
         run: |
           wget "${{ github.event.inputs.imgFile }}"
-          cd img-installer
           firmware_file=$(ls *squashfs-combined-efi.img.gz)
+          cd img-installer
           bash autobuild/autobuild.sh ".。/$firmware_file"
 
       - name: 🚀 上传 ISO 到 Release
