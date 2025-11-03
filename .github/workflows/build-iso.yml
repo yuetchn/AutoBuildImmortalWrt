@@ -107,7 +107,7 @@ jobs:
       - name: ✅ 复制固件到根目录
         run: |
           cp ${{ github.workspace }}/bin/targets/x86/64/*squashfs-combined-efi.img.gz ${{ github.workspace }}
-          rm -rf ${{ github.workspace }}/bin/targets/x86/64/*squashfs-combined-efi.img.gz
+          rm ${{ github.workspace }}/bin/targets/x86/64/*squashfs-combined-efi.img.gz
 
       - name: ✅ 上传固件到 artifact (for ISO generation)
         uses: actions/upload-artifact@v4
