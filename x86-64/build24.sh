@@ -179,8 +179,6 @@ PACKAGES="$PACKAGES luci-i18n-wifischedule-zh-cn"
 
 # 多Wan负载均衡
 PACKAGES="$PACKAGES luci-app-mwan3"
-# MWAN3 分流助手
-PACKAGES="$PACKAGES luci-app-mwan3helper"
 
 PACKAGES="$PACKAGES "
 PACKAGES="$PACKAGES "
