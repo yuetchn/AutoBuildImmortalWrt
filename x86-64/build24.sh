@@ -65,10 +65,8 @@ PACKAGES="$PACKAGES luci-i18n-filemanager-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-dufs-zh-cn"
 
 # Ath9k 无线网卡
-PACKAGES="$PACKAGES ath9k-htc-firmware"
 PACKAGES="$PACKAGES kmod-ath9k"
 PACKAGES="$PACKAGES kmod-ath9k-common"
-PACKAGES="$PACKAGES kmod-ath9k-htc"
 
 # 8168网卡以及其他网卡
 PACKAGES="$PACKAGES r8169-firmware"
@@ -178,6 +176,14 @@ PACKAGES="$PACKAGES luci-i18n-qos-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-ttyd-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-v2raya-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-wifischedule-zh-cn"
+
+# 多Wan负载均衡
+PACKAGES="$PACKAGES luci-app-mwan3"
+# MWAN3 分流助手
+PACKAGES="$PACKAGES luci-app-mwan3helper"
+
+PACKAGES="$PACKAGES "
+PACKAGES="$PACKAGES "
 
 # ======== shell/custom-packages.sh =======
 # 合并imm仓库以外的第三方插件
