@@ -92,11 +92,18 @@ PACKAGES="$PACKAGES kmod-usbip-client"
 PACKAGES="$PACKAGES kmod-usbip-server"
 PACKAGES="$PACKAGES kmod-usbmon"
 
+# 多Wan负载均衡
+PACKAGES="$PACKAGES kmod-ipt-ipset"
+PACKAGES="$PACKAGES kmod-nft-compat"
+
 PACKAGES="$PACKAGES kmod-usb-net-rndis"
 PACKAGES="$PACKAGES kmod-usb-storage"
 PACKAGES="$PACKAGES usbmuxd"
 PACKAGES="$PACKAGES libimobiledevice"
 PACKAGES="$PACKAGES usbutils"
+
+# Dawn
+PACKAGES="$PACKAGES dawn"
 
 # ======== 其他自定义软件 =========
 PACKAGES="$PACKAGES luci"
@@ -109,7 +116,6 @@ PACKAGES="$PACKAGES luci-app-adblock"
 PACKAGES="$PACKAGES luci-app-adblock-fast"
 PACKAGES="$PACKAGES luci-app-advanced-reboot"
 PACKAGES="$PACKAGES luci-app-airplay2"
-PACKAGES="$PACKAGES luci-app-antiblock"
 PACKAGES="$PACKAGES luci-app-argon-config"
 PACKAGES="$PACKAGES luci-app-aria2"
 PACKAGES="$PACKAGES luci-app-arpbind"
@@ -123,7 +129,9 @@ PACKAGES="$PACKAGES luci-app-ddns"
 PACKAGES="$PACKAGES luci-app-diskman"
 PACKAGES="$PACKAGES luci-app-dufs"
 PACKAGES="$PACKAGES luci-app-dynapoint"
-PACKAGES="$PACKAGES luci-app-filebrowser"
+# 文件浏览器
+# PACKAGES="$PACKAGES luci-app-filebrowser"
+# 文件管理器
 PACKAGES="$PACKAGES luci-app-filemanager"
 PACKAGES="$PACKAGES luci-app-firewall"
 PACKAGES="$PACKAGES luci-app-frpc"
@@ -162,7 +170,8 @@ PACKAGES="$PACKAGES luci-i18n-ddns-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-diskman-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-dufs-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-dynapoint-zh-cn"
-PACKAGES="$PACKAGES luci-i18n-filebrowser-zh-cn"
+# 文件浏览器
+# PACKAGES="$PACKAGES luci-i18n-filebrowser-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-filemanager-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-firewall-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-frpc-zh-cn"
@@ -179,8 +188,11 @@ PACKAGES="$PACKAGES luci-i18n-wifischedule-zh-cn"
 
 # 多Wan负载均衡
 PACKAGES="$PACKAGES luci-app-mwan3"
+PACKAGES="$PACKAGES mwan3"
 
-PACKAGES="$PACKAGES "
+# 多线多拨
+PACKAGES="$PACKAGES luci-app-syncdial"
+PACKAGES="$PACKAGES luci-app-syncthing"
 PACKAGES="$PACKAGES "
 
 # ======== shell/custom-packages.sh =======
