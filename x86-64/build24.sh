@@ -137,6 +137,7 @@ PACKAGES="$PACKAGES luci-app-firewall"
 PACKAGES="$PACKAGES luci-app-frpc"
 PACKAGES="$PACKAGES luci-app-natmap"
 PACKAGES="$PACKAGES luci-app-netdata"
+PACKAGES="$PACKAGES luci-app-netdata"
 PACKAGES="$PACKAGES luci-app-nfs"
 PACKAGES="$PACKAGES luci-app-oled"
 PACKAGES="$PACKAGES luci-app-package-manager"
@@ -188,11 +189,14 @@ PACKAGES="$PACKAGES luci-i18n-wifischedule-zh-cn"
 
 # 多Wan负载均衡
 PACKAGES="$PACKAGES luci-app-mwan3"
+PACKAGES="$PACKAGES luci-i18n-mwan3-zh-cn"
 PACKAGES="$PACKAGES mwan3"
 
 # 多线多拨
 PACKAGES="$PACKAGES luci-app-syncdial"
 PACKAGES="$PACKAGES luci-app-syncthing"
+PACKAGES="$PACKAGES luci-i18n-syncthing-zh-cn"
+PACKAGES="$PACKAGES syncthing"
 PACKAGES="$PACKAGES "
 
 # ======== shell/custom-packages.sh =======
